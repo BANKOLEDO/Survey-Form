@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fullpage">
+        <div id="header">
+        <h1 id="title">Bankole's Survey Form</h1>
+    <p id="description">This is a form which utilize various elements</p>
+        </div>
+    <div class="form-container">
+    <form action="" id="survey-form">
+        <div class="block">
+            <label for="name" id="name-label" >Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="block">
+            <label for="email" id="email-label" >Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="block">
+            <label for="number" id="number-label">Phone Number:</label>
+            <input type="number" name="number" id="number" min="1" max="10000000000000" placeholder="Enter Your Phone Number">
+        </div>
+        <div class="block">
+            <label for="dropdown">Select an option</label>
+            <select name="select" id="dropdown">
+                <option value="">Select</option>
+                <option value="choose1">choose1</option>
+                <option value="choose2">choose2</option>
+            </select>
+        </div>
+        <div class="inline">
+            <input type="radio" name="radio" id="radio1" value="radio1">
+            <label for="radio1">First Selection Using radio</label><br>
+            <input type="radio" name="radio" id="radio2"value="radio2">
+            <label for="radio2">Second Selection Using radio</label>
+        </div>
+        <div class="inline">
+            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+            <label for="checkbox1">First Selection Using checkbox</label> <br>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
+            <label for="checkbox2">Second Selection Using checkbox</label>
+        </div>
+        <div class="block">
+            <label for="textarea">Write About Something:</label> <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter Your Commment Here"></textarea>
+        </div>
+        <div class="block">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
